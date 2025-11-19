@@ -6,10 +6,10 @@ This project is an end-to-end Medical Chatbot built using a Retrieval-Augmented 
 # Features
 
  Text Extraction & Storing the Vector Embedding : Extracts and chunks text from PDF pages then by using Embedding Model to generate vector embedding to store in Pinecone Vector DB for subsequent semantic retrieval.
- ![image alt](https://github.com/jharajni/Build-a-Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask-AWS/blob/8012035012d598db837c8b37c32269de62892cea/Screenshot%202025-11-18%20225908.png)
+ ![image alt](https://github.com/jharajni/Build-a-Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask/blob/8012035012d598db837c8b37c32269de62892cea/Screenshot%202025-11-18%20225908.png)
 
 # Workflow Diagram
- ![image alt](https://github.com/jharajni/Build-a-Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask-AWS/blob/8012035012d598db837c8b37c32269de62892cea/Screenshot%202025-11-18%20225907.png)
+ ![image alt](https://github.com/jharajni/Build-a-Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask/blob/8012035012d598db837c8b37c32269de62892cea/Screenshot%202025-11-18%20225907.png)
 # Setup
 Clone the repository
 git clone https://github.com/jharajni/Build-a-Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask.git
