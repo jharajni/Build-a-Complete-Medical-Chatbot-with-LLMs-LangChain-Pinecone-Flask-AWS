@@ -1,7 +1,7 @@
 ## Medical Chatbot
 
 # Project Overview
-This RAG-based system processes uploaded PDFs by extracting and chunking text, then uses an embedding model and Pinecone Vector Database for retrieval, finally generating user responses via a Generative LLM.
+This project is an end-to-end Medical Chatbot built using a Retrieval-Augmented Generation (RAG) pipeline that processes medical PDFs and delivers accurate, context-aware answers. The system uses LangChain’s PyPDFLoader to extract text from uploaded PDFs, followed by RecursiveCharacterTextSplitter to break the content into structured chunks (500-token size with 20-token overlap). These chunks are embedded using the HuggingFace Sentence Transformer – all-MiniLM-L6-v2, and the vector representations are stored in Pinecone for fast similarity search. User queries are also converted into embeddings using the same model, and Pinecone returns the top-matching chunks through a similarity retriever (k=3). The retrieved context is passed to the Gemini 2.5 Flash LLM via LangChain’s ChatGoogleGenerativeAI to generate accurate medical responses using a custom prompt-based create_stuff_documents_chain setup. The complete pipeline runs through a Flask backend, with a simple frontend interface allowing users to upload PDFs, ask questions, and receive AI-generated answers in real time. This architecture ensures reliable, grounded, and efficient medical information retrieval from custom documents.
 
 # Features
 
